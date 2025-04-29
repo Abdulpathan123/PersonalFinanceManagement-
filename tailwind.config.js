@@ -14,6 +14,15 @@ export default {
             fontFamily: {
                 sans: ['Figtree', ...defaultTheme.fontFamily.sans],
             },
+            keyframes: {
+                indeterminate: {
+                    '0%': { transform: 'translateX(-100%)' },
+                    '100%': { transform: 'translateX(100%)' },
+                },
+            },
+            animation: {
+                indeterminate: 'indeterminate 1.5s linear infinite',
+            },
         },
     },
 
